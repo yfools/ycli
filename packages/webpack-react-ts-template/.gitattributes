@@ -1,0 +1,4 @@
+*  text eol=lf
+
+webpack.config.js merge=ours
+

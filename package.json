@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "dependencies": {
+    "chokidar": "^3.5.3",
     "commander": "^11.1.0",
     "create-app": "^2.1.0",
     "download-git-repo": "^3.0.2",

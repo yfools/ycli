@@ -1,0 +1,84 @@
+// // {
+// //   "compilerOptions": {
+// //     "target": "es5", // 编译后的 JavaScript 版本
+// //     "module": "commonjs", // 使用的模块系统
+// //     "jsx": "react", // 启用 JSX 并使用 React.createElement
+// //     "outDir": "./dist", // 编译后的文件输出目录
+// //     "strict": true, // 启用所有严格类型检查选项
+// //     "moduleResolution": "node", // 模块解析策略
+// //     "esModuleInterop": true, // 对 ES import 形式的JS模块启用默认导入,
+// //     "lib":["DOM"],
+// //   },
+
+// // }
+
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "noEmit": false,
+//     "declaration":true,
+//     "emitDeclarationOnly": true,
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "resolveJsonModule": true,
+//     "allowImportingTsExtensions": true,
+//     "jsx": "react"
+//   },
+//   "include": [
+//     "*.ts",
+//     "*.tsx",
+//     "./src/**/*.ts", // 编译的 TypeScript 文件路径
+//     "./src/**/*.tsx" // 编译的 TypeScript+JSX 文件路径
+//   ],
+//   "exclude": [
+//     "node_modules" // 排除编译的目录
+//   ]
+// }
+// {
+//   "compilerOptions": {
+//     "target": "ES2020",
+//     "lib": ["dom"],
+//     "module": "ESNext",
+//     // "allowJs": true,
+//     // "skipLibCheck": true,
+//     // "strict": true,
+//     // "forceConsistentCasingInFileNames": true,
+//     "noEmit": true,
+//     // "emitDeclarationOnly": true,
+//     // "esModuleInterop": true,
+//     // "module": "esnext",
+//     // "moduleResolution": "node",
+//     // "resolveJsonModule": true,
+//     "allowSyntheticDefaultImports": true,
+//     // "allowImportingTsExtensions": true,
+//     "jsx": "react",
+//   },
+//   "include": [".src"]
+// }
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    // "allowImportingTsExtensions": true,
+  },
+  "include": ["./src"]
+}
