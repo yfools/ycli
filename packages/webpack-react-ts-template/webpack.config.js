@@ -25,11 +25,19 @@ module.exports = {
     open: true,
     port: 8888,
     hot: true,
-    compress: false, //gzip压缩
+    // compress: false, //gzip压缩
     // http2: true,
-    // historyApiFallback: true,
+    historyApiFallback: {
+      index: '/app', // 当请求的文件找不到时，返回/app/目录下的index.html，而不仅仅是index.html，当配置了basename时需要这样设置才能正确跳转路由
+      // rewrites: [
+      //   // 重写路径：捕捉所有/app开头的路径并重定向到/app/index.html。用于多页应用
+      //   { from: /^\/app\/.*$/, to: '/app/index.html' },
+      // ],
+    },
     static: {
-      directory: path.join(__dirname, '../public'), //托管静态资源public文件夹
+      // directory: path.join(__dirname, '../public/app'), //托管静态资源public文件夹
+      serveIndex: true,
+      publicPath: '/app',
     },
     // client: {
     //   // logging: "verbose",

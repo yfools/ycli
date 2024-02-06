@@ -1,19 +1,23 @@
 import { RouteObject } from 'react-router-dom';
 import React from 'react';
 import App from '../App';
-// import A_C from '../page/A/A_C/index';
+import A from '../page/A';
+// import here
 
+// routes here
 let routes: Array<RouteObject> = [
   {
     path: '/',
     Component: App,
-    children: [],
+    children: [
+      //src\page
+      {},
+      {},
+    ],
   },
   {
     path: '/first',
-    // Component: A_C,
-    // Component: A_C,
-    // children: [{ path: '/A_C', element: <A_C></A_C> }]
+    Component: A,
   },
 ];
 
